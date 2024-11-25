@@ -1533,6 +1533,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5146997139708611776, guid: ae470e5f3698ebf42914d51d4a293b7a,
         type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146997139708611776, guid: ae470e5f3698ebf42914d51d4a293b7a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.560006
       objectReference: {fileID: 0}
@@ -1581,10 +1586,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5146997139708611776, guid: ae470e5f3698ebf42914d51d4a293b7a,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5487106234881988218, guid: ae470e5f3698ebf42914d51d4a293b7a,
         type: 3}
       propertyPath: m_Name
       value: Climbable Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580471594017802135, guid: ae470e5f3698ebf42914d51d4a293b7a,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
