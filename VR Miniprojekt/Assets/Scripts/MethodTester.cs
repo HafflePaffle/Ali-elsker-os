@@ -1,3 +1,4 @@
+using sc.terrain.proceduralpainter;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
