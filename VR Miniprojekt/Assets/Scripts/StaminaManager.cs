@@ -8,6 +8,7 @@ public class StaminaManager : MonoBehaviour
     public float currentStamina;
     private bool gripping;
     [SerializeField] private float staminaLoss;
+    [SerializeField] private float staminaRecover;
 
     void Start()
     {
@@ -27,6 +28,17 @@ public class StaminaManager : MonoBehaviour
             {
                 currentStamina = 0;
                 ReleaseGrip();
+            }
+        }
+        else
+        {
+            if (currentStamina < maxStamina)
+            {
+                currentStamina += staminaRecover;
+            }
+            else
+            {
+                currentStamina = maxStamina;
             }
         }
     }
