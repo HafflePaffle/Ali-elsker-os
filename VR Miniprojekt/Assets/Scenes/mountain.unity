@@ -522,10 +522,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 313501827}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a545fed6e2d2a0c45859f1f94c8c436a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 313501828}
   m_SourcePrefab: {fileID: 100100000, guid: a545fed6e2d2a0c45859f1f94c8c436a, type: 3}
 --- !u!4 &313501823 stripped
 Transform:
@@ -689,27 +685,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_PhysicsTriggerInteraction: 1
---- !u!135 &313501828
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313501824}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &344722221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,7 +2196,6 @@ GameObject:
   - component: {fileID: 992217867}
   - component: {fileID: 992217866}
   - component: {fileID: 992217864}
-  - component: {fileID: 992217874}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -2433,26 +2407,6 @@ Transform:
   - {fileID: 1958368565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &992217874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992217863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 496880615cd240be960d436c1c8ae570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 992217870}
-  m_ClimbSettings:
-    m_UseConstant: 1
-    m_ConstantValue:
-      m_AllowFreeXMovement: 1
-      m_AllowFreeYMovement: 1
-      m_AllowFreeZMovement: 1
-    m_Variable: {fileID: 0}
 --- !u!1 &1106950629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7585962580643705474, guid: a0ea40bd139aedc43b0e8374d6139437,
@@ -3197,27 +3151,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_PhysicsTriggerInteraction: 1
---- !u!135 &1190470375
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190470370}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1258541891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,10 +5563,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190470374}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a545fed6e2d2a0c45859f1f94c8c436a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1190470375}
   m_SourcePrefab: {fileID: 100100000, guid: a545fed6e2d2a0c45859f1f94c8c436a, type: 3}
 --- !u!1 &1881921196
 GameObject:
