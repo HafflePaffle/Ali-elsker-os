@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
@@ -7,7 +8,8 @@ public class raycasting : MonoBehaviour
 {
     public float Height;
     RaycastHit hit;
-   
+    public TextMeshProUGUI heightDisplay;
+
     private void Update()
     {
         Ray ray = new Ray(transform.position, -Vector3.up);
@@ -19,6 +21,13 @@ public class raycasting : MonoBehaviour
             {
                 Debug.Log(hit.distance);
                 Height = (float)hit.distance;
+
+                if (heightDisplay != null)
+                { 
+                    heightDisplay.text = $"H:: {Height:F2}";
+
+                }
+               
             }
 
         }
