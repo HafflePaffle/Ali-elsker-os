@@ -45,6 +45,11 @@ public class StaminaManager : MonoBehaviour
 
     private void ReleaseGrip()
     {
+        gripping = false;
+    }
 
+    public void Grip()
+    {
+        gripping = true;
     }
 }
