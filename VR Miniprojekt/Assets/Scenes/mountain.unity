@@ -2479,7 +2479,7 @@ MonoBehaviour:
   staminaLoss: 14.28
   staminaRecover: 20
   cooldown: 1
-  staminaUI: {fileID: 0}
+  staminaUI: {fileID: 1771733106}
 --- !u!1 &321136085
 GameObject:
   m_ObjectHideFlags: 0
