@@ -15,6 +15,7 @@ public class StaminaManager : MonoBehaviour
     [SerializeField] private float cooldown = 1;
     private XRDirectInteractor interactor;
     private float intensity;
+    public VRStaminaUI staminaUI;
 
     void Start()
     {
@@ -52,7 +53,12 @@ public class StaminaManager : MonoBehaviour
                 }
             }
         }
-        
+
+        {
+            if (staminaUI != null)
+                staminaUI.UpdateStamina(currentStamina);
+        }
+
     }
 
     private void ReleaseGrip()
@@ -88,4 +94,9 @@ public class StaminaManager : MonoBehaviour
         Physics.IgnoreLayerCollision(8, 6, false);
         interactor.enabled = true;
     }
+
+     
+
+
+  
 }
