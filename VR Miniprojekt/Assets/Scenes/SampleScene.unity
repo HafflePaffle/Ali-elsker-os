@@ -1269,6 +1269,7 @@ MonoBehaviour:
   detectLayers:
     serializedVersion: 2
     m_Bits: 1024
+  <InsideCollider>k__BackingField: 0
 --- !u!1001 &462933760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1680,6 +1681,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1647789484}
+        m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
+        m_MethodName: SetClimbing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -1687,6 +1700,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: StaminaManager, Assembly-CSharp
         m_MethodName: Ungrip
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1647789484}
+        m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
+        m_MethodName: SetClimbing
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3167,6 +3192,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1647789484}
+        m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
+        m_MethodName: SetClimbing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -3174,6 +3211,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: StaminaManager, Assembly-CSharp
         m_MethodName: Ungrip
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1647789484}
+        m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
+        m_MethodName: SetClimbing
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5746,6 +5795,8 @@ MonoBehaviour:
   detector: {fileID: 440827023}
   characterController: {fileID: 957271589}
   pushStrength: 1
+  fadeEffect: {fileID: 422192451}
+  <isClimbing>k__BackingField: 0
 --- !u!114 &1774554577
 MonoBehaviour:
   m_ObjectHideFlags: 0
