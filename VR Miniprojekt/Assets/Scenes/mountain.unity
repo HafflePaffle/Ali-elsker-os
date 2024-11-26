@@ -843,6 +843,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 313501828}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a545fed6e2d2a0c45859f1f94c8c436a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 313501829}
   m_SourcePrefab: {fileID: 100100000, guid: a545fed6e2d2a0c45859f1f94c8c436a, type: 3}
 --- !u!4 &313501823 stripped
 Transform:
@@ -1027,6 +1031,23 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &313501829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313501824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228caf8fea8fbe64fb3b2f55b97a067f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxStamina: 100
+  currentStamina: 0
+  staminaLoss: 14.28
+  staminaRecover: 20
+  cooldown: 1
 --- !u!1 &344722221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,6 +4261,23 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1190470376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190470370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228caf8fea8fbe64fb3b2f55b97a067f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxStamina: 100
+  currentStamina: 0
+  staminaLoss: 14.28
+  staminaRecover: 20
+  cooldown: 1
 --- !u!1 &1258541891
 GameObject:
   m_ObjectHideFlags: 0
@@ -7094,6 +7132,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190470375}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a545fed6e2d2a0c45859f1f94c8c436a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190470376}
   m_SourcePrefab: {fileID: 100100000, guid: a545fed6e2d2a0c45859f1f94c8c436a, type: 3}
 --- !u!1 &1882066551
 GameObject:
