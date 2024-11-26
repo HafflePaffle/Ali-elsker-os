@@ -10,7 +10,12 @@ public class HeadCollisionHandler : MonoBehaviour
 
     [SerializeField] private FadeEffect fadeEffect;
     [field: SerializeField]
-    public bool isClimbing
+    public bool isClimbingLeft
+    {
+        get;
+        set;
+    }
+    public bool isClimbingRight
     {
         get;
         set;
@@ -28,7 +33,7 @@ public class HeadCollisionHandler : MonoBehaviour
 
     void Update()
     {
-        if(detector.InsideCollider && isClimbing)
+        if(detector.InsideCollider && (isClimbingLeft || isClimbingRight))
         {
             fadeEffect.Fade(true);
             return;
@@ -38,17 +43,12 @@ public class HeadCollisionHandler : MonoBehaviour
             fadeEffect.Fade(false);
             return;
         }
-        if (isClimbing)
+        if (isClimbingLeft || isClimbingRight)
         {
             fadeEffect.Fade(true);
             return;
         }
         Vector3 pushBackDirection = CalculatePushbackDirection(detector.hits);
         characterController.Move(pushBackDirection.normalized * pushStrength * Time.deltaTime);
-    }
-
-    public void SetClimbing(bool climbing)
-    {
-        isClimbing = climbing;
     }
 }
