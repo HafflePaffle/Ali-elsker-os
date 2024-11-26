@@ -9,12 +9,13 @@ public class raycasting : MonoBehaviour
     public float Height;
     RaycastHit hit;
     public TextMeshProUGUI heightDisplay;
+    public LayerMask layerMask;
 
     private void Update()
     {
         Ray ray = new Ray(transform.position, -Vector3.up);
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
         {
             if(hit.collider.tag == "ground") 
             

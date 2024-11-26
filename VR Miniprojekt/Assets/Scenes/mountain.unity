@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 58609013}
   - component: {fileID: 58609014}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Raycaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Height: 5
-  heightDisplay: {fileID: 0}
+  heightDisplay: {fileID: 1460878897}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &64117682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,7 +3616,7 @@ GameObject:
   - component: {fileID: 1267518100}
   - component: {fileID: 1267518099}
   - component: {fileID: 1267518098}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4661,6 +4664,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Height: 0.1
   heightDisplay: {fileID: 1460878897}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1423459901
 GameObject:
   m_ObjectHideFlags: 0
