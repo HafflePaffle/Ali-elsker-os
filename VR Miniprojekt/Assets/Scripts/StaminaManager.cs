@@ -79,7 +79,6 @@ public class StaminaManager : MonoBehaviour
     {
         intensity = 1 / currentStamina;
         interactor.SendHapticImpulse(intensity, 0);
-        Debug.Log(intensity);
     }
 
     IEnumerator Cooldown()
