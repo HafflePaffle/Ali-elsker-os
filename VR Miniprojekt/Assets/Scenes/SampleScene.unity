@@ -1683,7 +1683,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1647789484}
         m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
-        m_MethodName: SetClimbing
+        m_MethodName: set_isClimbingLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1710,7 +1710,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1647789484}
         m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
-        m_MethodName: SetClimbing
+        m_MethodName: set_isClimbingLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3194,7 +3194,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1647789484}
         m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
-        m_MethodName: SetClimbing
+        m_MethodName: set_isClimbingRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3221,7 +3221,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1647789484}
         m_TargetAssemblyTypeName: HeadCollisionHandler, Assembly-CSharp
-        m_MethodName: SetClimbing
+        m_MethodName: set_isClimbingRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5796,7 +5796,7 @@ MonoBehaviour:
   characterController: {fileID: 957271589}
   pushStrength: 1
   fadeEffect: {fileID: 422192451}
-  <isClimbing>k__BackingField: 0
+  <isClimbingLeft>k__BackingField: 0
 --- !u!114 &1774554577
 MonoBehaviour:
   m_ObjectHideFlags: 0
