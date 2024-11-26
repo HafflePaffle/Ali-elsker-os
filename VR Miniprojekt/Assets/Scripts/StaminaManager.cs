@@ -14,6 +14,7 @@ public class StaminaManager : MonoBehaviour
     [SerializeField] private float staminaRecover;
     [SerializeField] private float cooldown = 1;
     private XRDirectInteractor interactor;
+    private float intensity;
 
     void Start()
     {
@@ -31,6 +32,7 @@ public class StaminaManager : MonoBehaviour
                 if (canGrip)
                 {
                     currentStamina -= staminaLoss * Time.deltaTime;
+                    TriggerHaptic();
                 }
                 else
                 {
@@ -71,6 +73,13 @@ public class StaminaManager : MonoBehaviour
     public void Ungrip()
     {
         gripping = false;
+    }
+
+    private void TriggerHaptic()
+    {
+        intensity = 1 / currentStamina;
+        interactor.SendHapticImpulse(intensity, 0);
+        Debug.Log(intensity);
     }
 
     IEnumerator Cooldown()
