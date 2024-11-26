@@ -4,15 +4,42 @@ using UnityEngine;
 
 public class HeadCollisionDetector : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField, Range(0, 0.5f)] private float detectDelay = 0.05f;
+    [SerializeField] private float detectDistance = 0.2f;
+    [SerializeField] private LayerMask detectLayers;
+    public List<RaycastHit> hits {  get; private set; }
+
+    private float time = 0;
+
+    private List<RaycastHit> PerformDetection(Vector3 position, float distance, LayerMask layerMask)
     {
-        
+        List<RaycastHit> raycastHits = new List<RaycastHit>();
+
+        List<Vector3> directions = new() { transform.forward, transform.right, -transform.right };
+
+        RaycastHit hit;
+        foreach(Vector3 dir in directions)
+        {
+            if(Physics.Raycast(position, dir,  out hit, distance, layerMask))
+            {
+                raycastHits.Add(hit);
+            }
+        }
+        return raycastHits;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        hits = PerformDetection(transform.position, detectDistance, detectLayers);
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime;
+        if (time > detectDelay)
+        {
+            hits = PerformDetection(transform.position, detectDistance, detectLayers);
+            //time = 0;
+        }
     }
 }
