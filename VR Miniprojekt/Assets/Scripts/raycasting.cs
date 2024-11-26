@@ -25,7 +25,7 @@ public class raycasting : MonoBehaviour
 
                 if (heightDisplay != null)
                 { 
-                    heightDisplay.text = $"H:: {Height:F2}";
+                    heightDisplay.text = $"Height: {Height:F2}";
 
                 }
                
