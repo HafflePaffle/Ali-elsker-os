@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SnowIntensifier : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem ps;
+    private ParticleSystem ps;
     [SerializeField] private float intensity = 5;
     [SerializeField] private float maxEmission = 1000f;
     private float currentEmission = 200f;
