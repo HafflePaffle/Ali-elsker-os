@@ -13,7 +13,24 @@ public class DirtIntensityController : MonoBehaviour
 
     [Header("vignette settiongs")]
     public float maxVignette = 100f; 
-  
+    void Start()
+    {
+        if (globalVolume == null)
+        {
+            Debug.LogError("Global Volume is not assigned!");
+            return;
+        }
+
+       
+        if (globalVolume.profile.TryGet<Vignette>(out vignette))
+        {
+            Debug.Log("Bloom effect found in the global volume.");
+        }
+        else
+        {
+            Debug.LogError("No Bloom effect found in the global volume! Please add it.");
+        }
+    }
 
     void Update()
     {
