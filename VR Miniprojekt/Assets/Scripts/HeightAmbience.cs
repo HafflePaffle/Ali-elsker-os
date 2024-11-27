@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class HeightAmbience : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private raycasting height;
+    [SerializeField] private float maxHeight = 10;
+    private AudioSource audioS;
+
+    private void Start()
     {
-        
+        if (height == null)
+            Debug.Log("Missing height measurer");
+        audioS = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        float heightRatio = height.Height / maxHeight;
+        heightRatio = Mathf.Clamp01(heightRatio);
+        audioS.volume = heightRatio;
     }
 }
