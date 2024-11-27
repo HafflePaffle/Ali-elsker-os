@@ -4029,7 +4029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58f1b1b1c576f440bf31cbfad339e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  staminaManager: {fileID: 313501829}
+  staminaManager1: {fileID: 1190470376}
+  staminaManager2: {fileID: 313501829}
   globalVolume: {fileID: 325532022}
   maxVignette: 0.6
 --- !u!1 &325987987
@@ -15224,6 +15225,7 @@ GameObject:
   - component: {fileID: 992217870}
   - component: {fileID: 992217869}
   - component: {fileID: 992217868}
+  - component: {fileID: 992217875}
   - component: {fileID: 992217867}
   - component: {fileID: 992217866}
   - component: {fileID: 992217865}
@@ -15506,6 +15508,32 @@ MonoBehaviour:
       m_AllowFreeYMovement: 1
       m_AllowFreeZMovement: 1
     m_Variable: {fileID: 0}
+--- !u!114 &992217875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992217863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccad580904d9324e8ef3c6707fc17b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Reset
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a6fd6b9a-cd11-4a95-adcc-94c6f7116cc0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -5095258475780990547, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  holdDuration: 1
 --- !u!1 &996661708
 GameObject:
   m_ObjectHideFlags: 0
