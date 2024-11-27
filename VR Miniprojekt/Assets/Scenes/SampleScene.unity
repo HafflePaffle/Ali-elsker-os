@@ -10273,9 +10273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e389a0f2f8a014aaeea48749b6e5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
   intensity: 5
-  maxEmission: 1000
+  maxEmission: 2000
 --- !u!1 &1435292822
 GameObject:
   m_ObjectHideFlags: 0
