@@ -9730,7 +9730,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -10286,7 +10286,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 20.8, y: 1, z: 18.1}
+    m_Scale: {x: 26.31, y: 1, z: 68.2}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -10484,7 +10484,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14379,12 +14379,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666711393}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.5660017, y: 8.394005, z: 3.851014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 574.503, y: 96.72, z: 142.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 992217873}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &666711397
 MonoBehaviour:
@@ -19087,7 +19087,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 815895539}
-  - {fileID: 666711396}
   - {fileID: 58609013}
   - {fileID: 1958368565}
   m_Father: {fileID: 0}
@@ -38028,6 +38027,7 @@ SceneRoots:
   - {fileID: 977285549}
   - {fileID: 1267518101}
   - {fileID: 1361986974}
+  - {fileID: 666711396}
   - {fileID: 806811946}
   - {fileID: 992217873}
   - {fileID: 1175152345}
